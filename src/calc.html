@@ -22,7 +22,8 @@
     <script>
         var exports = {};
     </script>
-    <script type="module" src="./calculate.js"></script>
+    <script type="module" src="./calculate-one-file.js"></script>
+    <script src="./test.js"></script>
     <script>
         function execCalc() {
             const firstBinary = document.getElementById("firstBinary").value;
@@ -31,7 +32,8 @@
             console.log(firstBinary)
             console.log(secondBinary)
             console.log(operation)
-            calculate('111', '101', '+')
+            console.log(exports.calculate('111', '101', '+'))
+            myTest()
         }
     </script>
 
